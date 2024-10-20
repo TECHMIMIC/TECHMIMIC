@@ -2,7 +2,7 @@
 # https://www.youtube.com/@TechMimic
 # https://odysee.com/@TechMimic
 
-# KDE PLASMA with Bourne shell (Konsole)
+# KDE Plasma with Bourne shell (Konsole)
 # Add to .bashrc
 export POWERLINE_GO_THEME=‘default’
 
