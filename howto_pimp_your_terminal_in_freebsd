@@ -2,7 +2,8 @@
 # https://www.youtube.com/@TechMimic
 # https://odysee.com/@TechMimic
 
-# Add to .bashrc (in the KDE portion of the video)export POWERLINE_GO_THEME=‘default’
+# KDE PLASMA with Bourne shell (Konsole)
+# Add to .bashrc
 export POWERLINE_GO_THEME=‘default’
 
 function set_prompt() {
@@ -11,6 +12,7 @@ function set_prompt() {
 
 PROMPT_COMMAND=set_prompt
 
-# Add to .zshrc (in the XFCE portion of the video)
+# XFCE with Zsh shell (XFCE Terminal)
+# Add to .zshrc
 export POWERLINE_GO_THEME=‘default’
 precmd() { PS=1"$(/home/techmimic/go/bin/powerline-go -error $?)” }
