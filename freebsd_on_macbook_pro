@@ -4,7 +4,7 @@
 
 #Tested on a MacBook Pro from 2015, full specifications and details are in the video
 
-# Add to /boot/device.hints
+# To get sound, add to /boot/device.hints
 hint.hdac.1.cad0.nid18.config="as=2 seq=2"
 hint.hdac.1.cad0.nid19.config="as=2 seq=0"
 hint.hdac.1.cad0.nid16.config="as=2 seq=15 type=Headphones"
