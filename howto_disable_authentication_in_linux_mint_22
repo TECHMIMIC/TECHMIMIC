@@ -1,6 +1,5 @@
 # Accompanying materials for the video "How to DISABLE authentication in LINUX MINT 22"
 # https://www.youtube.com/@TechMimic
-# https://odysee.com/@TechMimic
 
 # Add to 99-nopasswd.rules and replace "your-username" with your user account, but leave the "" in place, for example: "techmimic"
 polkit.addRule(function(action, subject) {
