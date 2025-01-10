@@ -1,0 +1,14 @@
+# Accompanying materials for the video "Install and configure VISUAL STUDIO CODE and PYTHON on LINUX"
+# https://www.youtube.com/@TechMimic
+
+print("Welcome to TECHMIMIC!")
+
+#User Input
+num1 = float(input("First Number? "))
+num2 = float(input("Second Number? "))
+
+#Calculation
+total = num1 + num2
+
+#User Feedback
+print("The total of the two numbers provided: ", total)
