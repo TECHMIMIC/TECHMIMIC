@@ -2,6 +2,7 @@
 # https://www.youtube.com/@TechMimic
 
 # KDE
+# Add to .bashrc
 export POWERLINE_GO_THEME=‘default’
 
 function set_prompt() {
@@ -11,5 +12,6 @@ function set_prompt() {
 PROMPT_COMMAND=set_prompt
 
 # XFCE
+# Add to .zshrc
 export POWERLINE_GO_THEME=‘default’
 precmd() { PS1="$(/home/techmimic/go/bin/powerline-go -error $?)” }
