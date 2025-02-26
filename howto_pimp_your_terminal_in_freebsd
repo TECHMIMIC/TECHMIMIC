@@ -1,0 +1,15 @@
+# Accompanying materials for the video " How to PIMP your TERMINAL in FREEBSD"
+# https://www.youtube.com/@TechMimic
+
+# KDE
+export POWERLINE_GO_THEME=‘default’
+
+function set_prompt() {
+    PS1=$(/home/techmimic/go/bin/powerline-go -error $?)
+}
+
+PROMPT_COMMAND=set_prompt
+
+# XFCE
+export POWERLINE_GO_THEME=‘default’
+precmd() { PS1="$(/home/techmimic/go/bin/powerline-go -error $?)” }
