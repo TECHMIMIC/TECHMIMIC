@@ -29,5 +29,5 @@ xset s nonblank
 # Disable key combos
 setxkbmap -option
 
-# Launch browser in kiosk mode
+# Launch browser in kiosk mode, add automatic restart
 chromium --kiosk --start-fullscreen --noerrdialogs --no-first-run --disable-infobars www.youtube.com/@techmimic
