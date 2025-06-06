@@ -1,9 +1,16 @@
-/etc/lightdm/lightdm.conf
+# Accompanying materials for the videos:
+#
+# "How to turn a LINUX MINT PC into a Web KIOSK"
+# "How to turn a LINUX MINT PC into a Web KIOSK (Continued - Part 2)"
+# 
+# https://www.youtube.com/@TechMimic
+
+# /etc/lightdm/lightdm.conf
 [Seat:*]
 autologin-user=kioskuser
 user-session=custom-kiosk
 
-/usr/share/xsessions/custom-kiosk.desktop
+# /usr/share/xsessions/custom-kiosk.desktop
 [Desktop Entry]
 Name=Kiosk Browser
 Comment=Kiosk session with browser only
@@ -11,7 +18,7 @@ Exec=/etc/X11/Xsession
 TryExec=/etc/X11/Xsession
 Type=Application
 
-/home/kioskuser/.xsession
+# /home/kioskuser/.xsession
 #!/bin/bash
 
 # Disable power management, screensaver and prevent a blank screen’
