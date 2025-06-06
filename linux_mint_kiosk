@@ -1,0 +1,26 @@
+/etc/lightdm/lightdm.conf
+[Seat:*]
+autologin-user=kioskuser
+user-session=custom-kiosk
+
+/usr/share/xsessions/custom-kiosk.desktop
+[Desktop Entry]
+Name=Kiosk Browser
+Comment=Kiosk session with browser only
+Exec=/etc/X11/Xsession
+TryExec=/etc/X11/Xsession
+Type=Application
+
+/home/kioskuser/.xsession
+#!/bin/bash
+
+# Disable power management, screensaver and prevent a blank screen’
+xset -dpms
+xset s off
+xset s nonblank
+
+# Disable key combos
+setxkbmap -option
+
+# Launch browser in kiosk mode
+chromium --kiosk --start-fullscreen --noerrdialogs --no-first-run --disable-infobars www.youtube.com/@techmimic
