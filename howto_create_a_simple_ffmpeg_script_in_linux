@@ -1,5 +1,5 @@
 # Accompanying materials for the video "How to create a simple FFMPEG SCRIPT in LINUX"
-# # https://www.youtube.com/@TechMimic
+# https://www.youtube.com/@TechMimic
 
 # Create the file convert.sh and add the below. Don't forget to make this an executable file as demonstrated in the video.
 
