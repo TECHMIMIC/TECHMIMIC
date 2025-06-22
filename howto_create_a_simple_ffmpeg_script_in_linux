@@ -1,1 +1,24 @@
+# Accompanying materials for the video:
+#
+# "How to create a simple FFMPEG SCRIPT in LINUX"
+# 
+# https://www.youtube.com/@TechMimic
 
+# convert.sh
+#!/bin/bash
+
+# Inputfile
+read -p "Enter the Inputfile: " inputfile
+
+# Check if the file does exists
+if [[ ! -f "$inputfile" ]]; then
+	echo "File not found!"
+	exit 1
+fi
+
+# Outputfile
+read -p "Enter the Outputfile: " outputfile
+ffmpeg -i "$inputfile" -vcodec dnxhd -b:v 36M -pix_fmt yuv422p -c:a pcm_s16le "$outputfile"
+
+# Finished
+echo "Conversion done."
