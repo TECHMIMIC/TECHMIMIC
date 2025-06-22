@@ -4,7 +4,8 @@
 # 
 # https://www.youtube.com/@TechMimic
 
-# convert.sh
+# Create the file convert.sh and add the below. Don't forget to make this an executable file as demonstrated in the video.
+
 #!/bin/bash
 
 # Inputfile
